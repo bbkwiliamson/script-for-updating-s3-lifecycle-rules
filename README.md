@@ -1,0 +1,1 @@
+# script-for-updating-s3-lifecycle-rules
