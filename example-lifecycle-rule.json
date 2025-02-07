@@ -1,0 +1,30 @@
+{
+    "Rules": [
+        {
+            "ID": "NoncurrentVersionsToGlacierSmallObjects",
+            "Status": "Enabled",
+            "Filter": {
+                "ObjectSizeLessThan": 262144
+            },
+            "NoncurrentVersionTransitions": [
+                {
+                    "NoncurrentDays": 30,
+                    "StorageClass": "GLACIER_IR"
+                }
+            ]
+        },
+        {
+            "ID": "NoncurrentVersionsToGlacierLargeObjects",
+            "Status": "Enabled",
+            "Filter": {
+                "ObjectSizeGreaterThan": 262143
+            },
+            "NoncurrentVersionTransitions": [
+                {
+                    "NoncurrentDays": 30,
+                    "StorageClass": "GLACIER_IR"
+                }
+            ]
+        }
+    ]
+}
