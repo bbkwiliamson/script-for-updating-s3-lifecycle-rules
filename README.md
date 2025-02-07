@@ -6,7 +6,7 @@ the **delete-lifecycle-rule.sh **
 
 the ****updating-s3-lifecycle.sh**
   = this file is for updating the buckets with lifecycle rules specified in a .json file
-  = NOTE: both of the files must be on the same location or path.
+  = NOTE: both of the files {example-lifecycle-rule.json,updating-s3-lifecycle.sh} must be on the same location or path.
          *the script checks for existing rules
           * then iterate through the rules and look for matching IDs
           * if there is any rule with a matching ID, it gets updated with the new details from the .json file
@@ -15,3 +15,4 @@ the ****updating-s3-lifecycle.sh**
 
   to execute the .sh files.
       you first need to change the permissions by running: chmod +x name-of-the-file      then click ENTER
+      then run: ./{.sh file}    you click enter to execute the script  
